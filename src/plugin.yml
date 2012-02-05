@@ -1,0 +1,4 @@
+name: PointsPlugin
+version: 1.0
+main: com.pvminecraft.pointsplugin.PointsPlugin
+depend: [Points]

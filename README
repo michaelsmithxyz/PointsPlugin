@@ -1,0 +1,6 @@
+PointsPlugin
+------------
+
+This is an example of how to use the Points API in your plugins.
+
+Be sure to have Points on your classpath when you build your plugin.
