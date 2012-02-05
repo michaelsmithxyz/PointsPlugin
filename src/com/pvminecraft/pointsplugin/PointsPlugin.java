@@ -1,11 +1,11 @@
 package com.pvminecraft.pointsplugin;
 
-import com.pvminecraft.points.Service;
+import com.pvminecraft.points.PointsService;
 import org.bukkit.plugin.ServicesManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class PointsPlugin extends JavaPlugin {
-    private Service points;
+    private PointsService points;
 
     @Override
     public void onEnable() {
@@ -23,7 +23,7 @@ public class PointsPlugin extends JavaPlugin {
     
     private boolean getPoints() {
         ServicesManager sm = getServer().getServicesManager();
-        points = sm.load(Service.class);
+        points = sm.load(PointsService.class);
         return points != null;
     }
     
